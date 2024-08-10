@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="row">
-            <div class="col">
+            <div class="col py-4">
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
                     <h2 class="custom-user">Bienvenido {{user.get_username|capfirst}}.</h2>
                     <p>Tenemos una lista de productos exclusivos para ti. Quieres conocer mas?</p>
@@ -12,7 +12,7 @@
             </div>
         </div>
         {% for flan in private_flans %}
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 py-4">
             <div class="card mb-4" style="">
                 <img src="{{ flan.image_url}}" class="card-img-top" alt="...">
                 <div class="card-body">

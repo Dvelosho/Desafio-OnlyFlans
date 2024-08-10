@@ -1,11 +1,10 @@
 {% extends 'base.html' %}
 {% block title %} Inicio {% endblock %}
 {% block 'content' %}
-{% load custom_filters %}
 <div class="container">
     <div class="row">
         <div class="row">
-            <div class="col">
+            <div class="col py-4">
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
                     <h2>Nuestros productos</h2>
                     <p>Onlyflans buscando entregar flanes de calidad</p>
@@ -14,7 +13,7 @@
             </div>
         </div>
         {% for flan in public_flans %}
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 py-4">
             <div class="card mb-4" style="">
                 <img src="{{ flan.image_url}}" class="card-img-top" alt="...">
                 <div class="card-body">

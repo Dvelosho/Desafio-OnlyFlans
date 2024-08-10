@@ -7,9 +7,9 @@ class Flan(models.Model):
     name = models.CharField(max_length=64)
     description = models.TextField()
     image_url = models.URLField("https://acortar.link/Hs3SLR")
-    create_at = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField()
     is_private = models.BooleanField()
+    create_at = models.DateTimeField(auto_now_add=True)
     
 class ContactForm(models.Model):
     contact_form_uuid = models.UUIDField(default=uuid.uuid4, editable=False)

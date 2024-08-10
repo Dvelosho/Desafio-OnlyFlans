@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from .models import Flan, ContactForm
-from .forms import ContactFormForm
 from django.http import HttpResponse, HttpResponseRedirect
+from .forms import ContactFormForm
+from .models import Flan, ContactForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from .forms import RegisterForm
@@ -61,3 +61,4 @@ def registro(request):
     else:
         form = RegisterForm()
     return render(request, 'registration/register.html', {'form': form})
+

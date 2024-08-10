@@ -25,6 +25,6 @@ h3 {
   color: var(--secondary) !important;
 }
 .carousel-img {
-  max-height: 400px;
+  max-height: 200px;
   object-fit: cover;
 }
